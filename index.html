@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senitel</title>
+  <link rel="icon" href="./images_senitel_website/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- In your HTML head -->
+</head>
+
+<body class="font-montserrat">
+
+  <header class="bg-black sticky top-0 z-50 w-full border-b border-gray-800">
+    <nav class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <!-- Logo - Always visible but positioned normally on desktop -->
+      <a href="/" class="flex items-center group ">
+        <img src="images_senitel_website/name.svg" alt="logo"
+          class="h-12 w-auto group-hover:opacity-90 transition-opacity" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-10">
+        <ul class="flex space-x-8">
+          <li>
+            <a href="#home" class="text-white hover:text-coral-red transition-colors duration-300 relative group">
+              Home
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-coral-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#platform" class="text-white hover:text-coral-red transition-colors duration-300 relative group">
+              Platform
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-coral-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#solutions" class="text-white hover:text-coral-red transition-colors duration-300 relative group">
+              Solutions
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-coral-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#support" class="text-white hover:text-coral-red transition-colors duration-300 relative group">
+              Support
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-coral-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#"
+          class="relative inline-flex items-center px-6 py-2.5 bg-coral-red text-white text-sm font-medium rounded-lg hover:bg-coral-red-dark transition-all duration-300 group">
+          Get Started
+          <span class="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-gray-800 py-8">
+      <div class="px-4 space-y-4">
+        <a href="#home"
+          class="block text-white hover:text-coral-red px-3 py-3 border-l-2 border-transparent hover:border-coral-red transition-all duration-300">Home</a>
+        <a href="#platform"
+          class="block text-white hover:text-coral-red px-3 py-3 border-l-2 border-transparent hover:border-coral-red transition-all duration-300">Platform</a>
+        <a href="#solutions"
+          class="block text-white hover:text-coral-red px-3 py-3 border-l-2 border-transparent hover:border-coral-red transition-all duration-300">Solutions</a>
+        <a href="#support"
+          class="block text-white hover:text-coral-red px-3 py-3 border-l-2 border-transparent hover:border-coral-red transition-all duration-300">Support</a>
+        <a href="#"
+          class="block mt-4 px-3 py-2.5 bg-coral-red text-white text-sm font-medium rounded-lg hover:bg-coral-red-dark transition-all duration-300 w-max">Get
+          Started</a>
+          
+        <!-- Mobile Logo - Centered below links, only visible in mobile menu -->
+        <div class="flex justify-center pt-8">
+          <a href="/" class="flex items-center group md:hidden">
+            <img src="images_senitel_website/logo.svg" alt="logo"
+              class="h-24 w-auto group-hover:opacity-90 transition-opacity" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+</header>
+
+
+
+  <section id="introduce" class="relative overflow-hidden bg-gradient-to-br from-dark-blue to-black">
+    <!-- Animated Background -->
+    <div class="absolute inset-0 overflow-hidden opacity-20">
+      <div class="absolute inset-0 bg-grid-pattern animate-pulse-slow"></div>
+      <div class="absolute inset-0 bg-radial-gradient opacity-70"></div>
+    </div>
+
+    <!-- Content Container -->
+    <div class="container mx-auto px-4 py-12 lg:py-24 relative z-10">
+      <div class="flex flex-col lg:flex-row gap-8 items-center">
+        <!-- Left Content -->
+        <div class="lg:w-1/2 space-y-8 relative">
+          <!-- Floating Elements -->
+          <div
+            class="absolute -top-10 -left-10 w-32 h-32 bg-primary rounded-full mix-blend-screen opacity-10 animate-float">
+          </div>
+          <div
+            class="absolute -bottom-5 -right-5 w-24 h-24 bg-coral-red rounded-full mix-blend-screen opacity-10 animate-float-delay">
+          </div>
+
+          <!-- Main Heading with Decoration -->
+          <div class="relative">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+              Develop <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-coral-red to-primary">Contingency</span>
+              Plans
+            </h1>
+            <div class="w-24 h-1 bg-gradient-to-r from-coral-red to-primary rounded-full mb-6"></div>
+          </div>
+
+          <!-- Description -->
+          <p class="text-lg text-gray-300 leading-relaxed max-w-lg">
+            Our tailored solutions have left a lasting impact on brands seeking to thrive in the digital age. We are
+            committed to delivering exceptional results and ensuring our clients' success in an ever-evolving landscape.
+          </p>
+
+          <!-- CTA Button with Hover Effect -->
+          <div class="group relative inline-block">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-coral-red to-primary rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200">
+            </div>
+            <a href="#"
+              class="relative px-8 py-3 bg-coral-red text-white font-medium rounded-lg hover:bg-coral-red-dark transition duration-300 flex items-center gap-2">
+              Get Started
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-bounce-horizontal" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Stats Card with Glass Morphism Effect -->
+          <div
+            class="mt-12 bg-white bg-opacity-5 backdrop-blur-lg rounded-3xl border border-white border-opacity-10 shadow-2xl p-6 max-w-md">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Satisfied Customers</h3>
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="p-2 bg-coral-red bg-opacity-20 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-coral-red" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                    </svg>
+                  </div>
+                  <span class="text-3xl font-bold text-white">23,123+</span>
+                </div>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  Our tailored solutions have left a lasting impact on brands seeking to thrive in the digital age.
+                </p>
+              </div>
+              <div class="flex -space-x-3 mr-12">
+                <img class="w-10 h-10 rounded-full "
+                  src="./images_senitel_website/sample_customers1.svg" alt="Customer">
+                <img class="w-10 h-10 rounded-full "
+                  src="./images_senitel_website/sample_customers2.svg" alt="Customer">
+                <img class="w-10 h-10 rounded-full "
+                  src="./images_senitel_website/sample_customers3.svg" alt="Customer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="lg:w-1/2 relative mt-12 lg:mt-0">
+          <!-- Modular Protection Card -->
+          <div
+            class="bg-white bg-opacity-5 backdrop-blur-lg rounded-3xl border border-white border-opacity-10 p-6 max-w-md ml-auto shadow-2xl transform transition-all hover:scale-105 duration-300 lg:mt-[-75px] lg:mr-2 ">
+            <div class="flex justify-between items-start">
+              <h3 class="text-2xl font-bold text-white mb-4">Modular Protection</h3>
+              <div class="p-2 bg-primary bg-opacity-20 rounded-full animate-spin-slow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Our tailored solutions have left a lasting impact on brands seeking to thrive in the digital age.
+            </p>
+          </div>
+
+          <!-- Main Image with Floating Effect -->
+          <div class="relative mt-8 lg:mt-0 lg:absolute lg:-left-52 lg:top-10">
+            <div class="relative">
+              <img src="./images_senitel_website/image 2.svg" alt="Main Illustration"
+                class="w-full max-w-lg mx-auto lg:max-w-none animate-float-slow">
+
+              <!-- Decorative Elements -->
+              <div class="absolute -top-8 -left-8 w-16 h-16 bg-coral-red rounded-full opacity-20 animate-pulse"></div>
+              <div class="absolute -bottom-8 -right-8 w-20 h-20 bg-primary rounded-full opacity-20 animate-pulse-delay">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="questions" class="relative overflow-hidden py-16 lg:py-24 px-4 sm:px-8 xl:px-0">
+    <!-- Background Container with Glass Morphism Effect -->
+    <div
+      class="relative w-full max-w-6xl mx-auto h-auto min-h-[500px] lg:h-[725px] bg-[#FFFFFF]/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#FFFFFF]/10">
+      <!-- Background Image with Gradient Overlay -->
+      <div class="absolute inset-0 overflow-hidden">
+        <img src="./images_senitel_website/Rectangle 4.svg" alt="background_image"
+          class="w-full h-full object-cover opacity-60" />
+        <div class="absolute inset-0 bg-gradient-to-br from-[#C62F39]/20 to-[#000000]/70"></div>
+      </div>
+
+      <!-- Content Container -->
+      <div class="relative flex flex-col lg:flex-row h-full text-white p-8 sm:p-12">
+        <!-- Left Side - Problem Statement (Top on mobile) -->
+        <div class="w-full lg:w-2/5 flex flex-col justify-center items-center lg:items-center mb-12 lg:mb-0">
+          <div class="text-center lg:text-left space-y-6 transform hover:scale-105 transition duration-500">
+            <img src="./images_senitel_website/questions.svg" alt="questions"
+              class="w-3/4 max-w-[200px] mx-auto lg:mx-0 lg:ml-12" />
+            <h1 class="text-primary text-4xl sm:text-5xl lg:text-[50px] leading-tight  ">
+              <span class="text-coral-red text-5xl sm:text-6xl lg:text-[75px]">Y</span>our  
+              <span class="text-coral-red text-5xl sm:text-6xl lg:text-[75px]">P</span>roblem
+            </h1>
+            <p class="text-center text-white/80 text-lg hidden lg:block ">Tap on any case to see how we solved it</p>
+          </div>
+        </div>
+
+        <!-- Vertical Divider (Hidden on mobile) -->
+        <div class="hidden lg:block w-px bg-[#C62F39]/70 mx-8"></div>
+
+        <!-- Right Side - Case Studies (Interactive Cards) -->
+        <div class="w-full lg:w-3/5 mt-0 lg:mt-[30px]">
+          <div class="w-full max-w-2xl mx-auto">
+            <!-- Heading -->
+            <h2 class="text-primary text-2xl sm:text-3xl mb-8 text-center lg:text-left">
+              Showcasing The Methods Used By Authorities To Solve Real Cases
+            </h2>
+
+            <!-- Case list - Animated Cards -->
+            <div class="space-y-6">
+              <!-- Case 1 -->
+              <div
+                class="case-card group relative overflow-hidden bg-[#FFFFFF]/5 rounded-xl p-6 transition-all duration-300 hover:bg-[#C62F39]/20 hover:shadow-lg hover:shadow-[#C62F39]/10 border border-transparent hover:border-[#C62F39]/30">
+                <div class="flex items-center justify-between">
+                  <span class="text-primary text-xl sm:text-2xl">Stole Retirement Money</span>
+                  <img src="./images_senitel_website/UNDER_ARROW_ICON.svg" alt="arrow"
+                    class="w-8 h-8 transform group-hover:translate-x-2 transition-transform" />
+                </div>
+                <div
+                  class="case-details hidden absolute inset-0 bg-[#1a1a1a]/95 p-6 rounded-xl flex flex-col justify-center">
+                  <h3 class="text-coral-red text-2xl mb-4">Solution Applied</h3>
+                  <p class="text-white/90">Our forensic team traced the digital footprints and recovered 87% of funds
+                    within 72 hours through international cooperation.</p>
+                  <button class="close-case mt-6 text-coral-red text-sm self-end">CLOSE</button>
+                </div>
+              </div>
+
+              <!-- Case 2 -->
+              <div
+                class="case-card group relative overflow-hidden bg-[#FFFFFF]/5 rounded-xl p-6 transition-all duration-300 hover:bg-[#C62F39]/20 hover:shadow-lg hover:shadow-[#C62F39]/10 border border-transparent hover:border-[#C62F39]/30">
+                <div class="flex items-center justify-between">
+                  <span class="text-primary text-xl sm:text-2xl">Got Into a Trading Scam</span>
+                  <img src="./images_senitel_website/UNDER_ARROW_ICON.svg" alt="arrow"
+                    class="w-8 h-8 transform group-hover:translate-x-2 transition-transform" />
+                </div>
+                <div
+                  class="case-details hidden absolute inset-0 bg-[#1a1a1a]/95 p-6 rounded-xl flex flex-col justify-center">
+                  <h3 class="text-coral-red text-2xl mb-4">Solution Applied</h3>
+                  <p class="text-white/90">Identified the scam network and froze assets before they could be laundered,
+                    recovering $250k for the victim.</p>
+                  <button class="close-case mt-6 text-coral-red text-sm self-end">CLOSE</button>
+                </div>
+              </div>
+
+              <!-- Case 3 -->
+              <div
+                class="case-card group relative overflow-hidden bg-[#FFFFFF]/5 rounded-xl p-6 transition-all duration-300 hover:bg-[#C62F39]/20 hover:shadow-lg hover:shadow-[#C62F39]/10 border border-transparent hover:border-[#C62F39]/30">
+                <div class="flex items-center justify-between">
+                  <span class="text-primary text-xl sm:text-2xl">Withdraw Msg From Government</span>
+                  <img src="./images_senitel_website/UNDER_ARROW_ICON.svg" alt="arrow"
+                    class="w-8 h-8 transform group-hover:translate-x-2 transition-transform" />
+                </div>
+                <div
+                  class="case-details hidden absolute inset-0 bg-[#1a1a1a]/95 p-6 rounded-xl flex flex-col justify-center">
+                  <h3 class="text-coral-red text-2xl mb-4">Solution Applied</h3>
+                  <p class="text-white/90">Traced spoofed numbers to source and prevented further victims through
+                    coordinated telecom provider alerts.</p>
+                  <button class="close-case mt-6 text-coral-red text-sm self-end">CLOSE</button>
+                </div>
+              </div>
+
+              <!-- Case 4 -->
+              <div
+                class="case-card group relative overflow-hidden bg-[#FFFFFF]/5 rounded-xl p-6 transition-all duration-300 hover:bg-[#C62F39]/20 hover:shadow-lg hover:shadow-[#C62F39]/10 border border-transparent hover:border-[#C62F39]/30">
+                <div class="flex items-center justify-between">
+                  <span class="text-primary text-xl sm:text-2xl">Pay Through Gift Cards</span>
+                  <img src="./images_senitel_website/UNDER_ARROW_ICON.svg" alt="arrow"
+                    class="w-8 h-8 transform group-hover:translate-x-2 transition-transform" />
+                </div>
+                <div
+                  class="case-details hidden absolute inset-0 bg-[#1a1a1a]/95 p-6 rounded-xl flex flex-col justify-center">
+                  <h3 class="text-coral-red text-2xl mb-4">Solution Applied</h3>
+                  <p class="text-white/90">Worked with retailers to track gift card usage patterns and identify the
+                    redemption locations leading to arrests.</p>
+                  <button class="close-case mt-6 text-coral-red text-sm self-end">CLOSE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="qr_code" class="relative overflow-hidden py-16 lg:py-24 px-4 sm:px-8">
+    <!-- Background Container with Glass Morphism Effect -->
+    <div
+      class="relative w-full max-w-6xl mx-auto h-auto min-h-[600px] lg:h-[725px] bg-[#FFFFFF]/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-[#FFFFFF]/10">
+      <!-- Background Elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <img src="./images_senitel_website/background_vector.svg" alt="background_vector"
+          class="w-full h-full object-cover opacity-80" />
+        <img src="./images_senitel_website/gif1.gif" alt="background_gif"
+          class="absolute inset-0 w-full h-full object-cover opacity-30" />
+        <div class="absolute inset-0 bg-gradient-to-br from-[#C62F39]/10 to-[#000000]/70"></div>
+      </div>
+
+      <!-- Content Container -->
+      <div class="relative h-full flex flex-col p-6 sm:p-8 lg:p-12">
+        <!-- Top Navigation Bar -->
+        <div class="flex justify-between items-start w-full">
+          <a href="#"
+            class="home-btn z-10 w-[120px] lg:w-[150px] h-[40px] lg:h-[45px] bg-coral-red text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center hover:bg-coral-red-dark hover:shadow-lg hover:shadow-coral-red/30 transform hover:-translate-y-1">
+            <span class="text-[16px] lg:text-[18px]">Home</span>
+          </a>
+          <img src="./images_senitel_website/Camera_imgae.svg" alt="qr_code"
+            class="w-[120px] h-[120px] lg:w-[175px] lg:h-[175px] transform hover:scale-110 transition-transform" />
+        </div>
+
+        <!-- Main Content - QR Code Section -->
+        <div class="flex-1 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 my-4 lg:my-8">
+          <!-- App Info -->
+          <div class="text-center lg:text-left space-y-2 lg:space-y-4 order-2 lg:order-1">
+            <h1 class="text-primary text-5xl sm:text-6xl lg:text-[75px] font-bold leading-tight">
+              Senitel <span class="text-coral-red">App</span>
+            </h1>
+            <p class="text-white/70 text-lg lg:text-xl mb-6 lg:mb-12">by @TanushKumar</p>
+
+            <div
+              class="trust-badge hidden lg:block bg-[#FFFFFF]/10 p-4 rounded-xl border border-[#FFFFFF]/20 max-w-[350px] transform hover:scale-105 transition-all">
+              <p class="text-white text-lg">@Trust us! Start using Senitel today.</p>
+            </div>
+          </div>
+
+          <!-- QR Code with Interactive Hover Effect -->
+          <div class="order-1 lg:order-2 relative group">
+  <!-- QR Container (reference for height) -->
+  <div class="qr-container relative z-10 p-4 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+    <img src="./images_senitel_website/QR CODE.svg" alt="qr_code"
+      class="w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] transition-all duration-500 group-hover:scale-105" />
+  </div>
+
+  <!-- Glow Effect (unchanged) -->
+  <div class="absolute inset-0 bg-coral-red/20 rounded-2xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0"></div>
+
+  <!-- Fixed Scanner Animation -->
+  <div class="scan-animation absolute top-0 left-0 right-0 h-[calc(150px+2rem)] lg:h-[calc(200px+2rem)] border-2 border-coral-red rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-hidden">
+    <div class="scanner-line absolute top-0 left-0 right-0 h-[2px] bg-coral-red animate-scan"></div>
+  </div>
+</div>
+        </div>
+
+        <!-- Mobile Trust Badge -->
+        <div class="lg:hidden text-center mt-8">
+          <p class="text-white/80 text-lg">@Trust us! Start using Senitel today.</p>
+        </div>
+
+        <!-- Decorative Floating Elements -->
+        <div class="absolute bottom-8 left-8 w-16 h-16 rounded-full bg-coral-red/20 blur-xl"></div>
+        <div class="absolute top-1/3 right-12 w-24 h-24 rounded-full bg-white/10 blur-xl"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="all-data"
+    class="bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] pt-16 pb-8 px-4 sm:px-8 lg:px-12 w-full overflow-hidden">
+    <!-- Decorative Elements -->
+    <div
+      class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-coral-red to-transparent opacity-20">
+    </div>
+    <div class="absolute bottom-20 left-1/4 w-32 h-32 rounded-full bg-coral-red/10 blur-3xl"></div>
+    <div class="absolute top-1/3 right-1/4 w-40 h-40 rounded-full bg-white/5 blur-3xl"></div>
+
+    <!-- Main Footer Content -->
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Top Navigation -->
+      <div class="flex flex-col lg:flex-row justify-between items-center mb-12 gap-8">
+        <ul class="flex flex-wrap justify-center gap-6 lg:gap-14 text-lg font-bold">
+          <li><a href="#"
+              class="text-primary hover:text-coral-red transition-all duration-300 hover:scale-105 block">Home</a></li>
+          <li><a href="#"
+              class="text-primary hover:text-coral-red transition-all duration-300 hover:scale-105 block">Platform</a>
+          </li>
+          <li><a href="#"
+              class="text-primary hover:text-coral-red transition-all duration-300 hover:scale-105 block">Solutions</a>
+          </li>
+          <li><a href="#"
+              class="text-primary hover:text-coral-red transition-all duration-300 hover:scale-105 block">Support</a>
+          </li>
+        </ul>
+        <a href="mailto:Senitel@gmail.com"
+          class="text-primary text-3xl sm:text-4xl lg:text-[50px] font-bold hover:text-coral-red transition-colors duration-300 text-center lg:text-right">
+          Senitel@gmail.com
+        </a>
+      </div>
+
+      <!-- Divider -->
+      <div class="h-px bg-gradient-to-r from-transparent via-[#FFFFFF]/50 to-transparent my-8 mb-12"></div>
+
+      <!-- Main Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
+        <!-- About Senitel -->
+        <div class="col-span-1 lg:col-span-2">
+          <h1 class="text-primary text-xl font-bold mb-4 flex items-center">
+            <span class="w-12 h-px bg-coral-red mr-4 inline-block"></span>
+            ABOUT SENITEL
+          </h1>
+          <p
+            class="text-primary text-justify text-base hover:opacity-90 transition-opacity duration-300 leading-relaxed">
+            Sentinel is a cutting-edge security app designed to protect users from scams and
+            fraudulent content. By simply uploading photos, messages, links, or documents,
+            Sentinel quickly analyzes them to detect potential scams. Sentinel provides
+            real-time alerts to keep you safe.
+          </p>
+          <div class="mt-6 flex space-x-4 lg:hidden">
+            <img src="./images_senitel_website/QR CODE.svg" alt="qr_code"
+              class="w-24 h-24 opacity-90 hover:opacity-100 transition-opacity">
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h1 class="text-primary text-xl font-bold mb-4 flex items-center">
+            <span class="w-12 h-px bg-coral-red mr-4 inline-block"></span>
+            QUICK LINKS
+          </h1>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Home
+              </a></li>
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Platform
+              </a></li>
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Solutions
+              </a></li>
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Support
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div>
+          <h1 class="text-primary text-xl font-bold mb-4 flex items-center">
+            <span class="w-12 h-px bg-coral-red mr-4 inline-block"></span>
+            OUR SERVICES
+          </h1>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Fraud Detection
+              </a></li>
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Real-time Alerts
+              </a></li>
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Content Analysis
+              </a></li>
+            <li><a href="#" class="text-white hover:text-coral-red transition-all duration-300 flex items-center group">
+                <span
+                  class="w-2 h-2 bg-coral-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                24/7 Support
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h1 class="text-primary text-xl font-bold mb-4 flex items-center">
+            <span class="w-12 h-px bg-coral-red mr-4 inline-block"></span>
+            CONTACT INFO
+          </h1>
+          <div class="space-y-3 text-white/90">
+            <div class="flex items-start">
+              <svg class="w-5 h-5 mt-0.5 mr-3 text-coral-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <p>14418 Yard Drive, Lake Mauricefort, NC10050</p>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-coral-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                </path>
+              </svg>
+              <p>+91-9989xxxx</p>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-coral-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+              </svg>
+              <p>senitel@gmail.com</p>
+            </div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-coral-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                </path>
+              </svg>
+              <p>http://demo.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="flex justify-center space-x-8 sm:space-x-12 mb-12">
+        <a href="#"
+          class="social-icon w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-coral-red/20 transition-all duration-300 hover:scale-110">
+          <img src="./images_senitel_website/instagram_logo.svg" alt="instagram" class="w-5 h-5">
+        </a>
+        <a href="#"
+          class="social-icon w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-coral-red/20 transition-all duration-300 hover:scale-110">
+          <img src="./images_senitel_website/youtube_logo.svg" alt="youtube" class="w-5 h-5">
+        </a>
+        <a href="#"
+          class="social-icon w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-coral-red/20 transition-all duration-300 hover:scale-110">
+          <img src="./images_senitel_website/linkeden_logo.svg" alt="linkedin" class="w-5 h-5">
+        </a>
+        <a href="#"
+          class="social-icon w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-coral-red/20 transition-all duration-300 hover:scale-110">
+          <img src="./images_senitel_website/whatsapp_logo.svg" alt="whatsapp" class="w-5 h-5">
+        </a>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="flex flex-col lg:flex-row justify-between items-center pt-8 border-t border-[#FFFFFF]/10">
+        <h1
+          class="text-primary text-5xl sm:text-7xl lg:text-[100px] font-bold mb-6 lg:mb-0 hover:text-coral-red transition-colors duration-300">
+          Senitel
+        </h1>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 mb-6 lg:mb-0">
+          <a href="#"
+            class="text-primary text-lg sm:text-xl hover:text-coral-red transition-colors duration-300">Privacy
+            Policy</a>
+          <a href="#"
+            class="text-primary text-lg sm:text-xl hover:text-coral-red transition-colors duration-300">License
+            Agreement</a>
+        </div>
+
+        <div class="hidden lg:flex">
+          <img src="./images_senitel_website/QR CODE.svg" alt="qr_code"
+            class="w-32 h-32 opacity-90 hover:opacity-100 transition-opacity hover:shadow-lg hover:shadow-coral-red/20">
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-white/50 text-sm mt-12">
+      © 2023 Senitel Security. All rights reserved.
+    </div>
+  </footer>
+
+
+</body>
+<script src="./javascript/hamburger_menu.js"></script>
+<script src="./javascript/card.js"></script>
+
+</html>
